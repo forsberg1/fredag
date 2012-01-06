@@ -8,11 +8,16 @@
 @import url("http://static.hldesign.se/css/960.css");
 body
 {
-	background: #140f09 url(/assets/body_bg.png) no-repeat 50% 0%;
+	background: #120d09 url(/assets/body_bg.png) no-repeat 50% 0%;
 
 }
 #wrapper
 {
+}
+span.send_btn
+{
+	top: 520px;
+	position: absolute;
 }
 #logo
 {
