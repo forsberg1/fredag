@@ -1,0 +1,55 @@
+// This is a manifest file that'll be compiled into including all the files listed below.
+// Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
+// be included in the compiled file accessible from http://example.com/assets/application.js
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// the compiled file.
+//
+//= require jquery
+//= require jquery_ujs
+//= require_tree .
+$(document).ready(function() {
+  // Handler for .ready() called.
+  $("#middle_down").hide();
+  $('input.fredag').bind('keypress', function() {
+
+	var tValue = $(this).attr("value");
+	$("#middle_down p").text(tValue);
+	if(tValue.length == 0)
+	{
+	  $("#middle_down").slideDown("slow");
+
+	}
+
+});
+
+$('input.fredag').live('click', function() {
+  var tValue = $(this).attr("value");
+  $(this).attr("value", "");
+  $(this).toggleClass("glowThings");
+  $("#middle_down").slideUp("fast");
+  
+});
+
+$('input.fredag').live('blur', function() {
+  var tValue = $(this).attr("value");
+  if(tValue == '')
+  {
+  	 $("#middle_down").slideUp("fast");
+  	 $(this).fadeIn("fast").attr("value", "Klistra in din länk här...");
+  }
+  else
+  {
+  	 $(this).attr("value", $(this).attr("val"));
+  }
+ 
+  $(this).toggleClass("glowThings");
+});
+
+
+$('input.fredag').bind('onkeydown', function() {
+  $(this).css("font-size", "12px");
+  alert("dsdadsad");
+});
+});
+
+

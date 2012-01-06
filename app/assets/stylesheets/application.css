@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+@import url("http://static.hldesign.se/css/960.css");
+body
+{
+	background: #140f09 url(/assets/body_bg.png) no-repeat 50% 0%;
+
+}
+#wrapper
+{
+}
+#logo
+{
+	margin-top: 50px;
+	height: 20px;
+	position: absolute;
+}
+#middle
+{
+	margin-left: 120px;
+	height: 165px;
+	width: 745px;
+	background:  url(/assets/middle_first.png) no-repeat center;
+	
+}
+div#middle_down
+{
+	width: 720px;
+	height: 390px;
+	margin-left: 125px;
+	background:  url(/assets/middle.png) no-repeat;
+
+}
+div#middle_down p
+{
+	margin-left: 30px;
+	margin-top: 20px;
+	color: #ffffff;
+}
+h1
+{
+	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+	font-style: italic;
+    color: #B9D200;
+    margin-bottom: 5px;
+   
+}
+p
+{
+  font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 14px;
+  margin-top: .5em; color: #666;
+  margin-bottom: 5px;
+	
+}
+input.fredag 
+{
+	border: 1px solid red;
+	/*Filter: Chroma(Color = #000000) Glow(Color=#00FF00, Strength=20)*/
+
+}
+#inputHolder
+{
+	
+
+}
+input.fredag[type=text]
+{
+	background: url(/assets/text_input.png) no-repeat;
+	border: none;
+	width: 520px;
+	padding-left: 190px;
+	padding-top: 10px;
+	height: 144px;
+	font-size: 30px;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	line-height: 40px;
+	letter-spacing: -1px;color: #444;
+	color: #284847;
+	text-transform: uppercase;
+}
+
+#footer
+{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#footer p
+{
+	color: white;
+
+}
+	
