@@ -13,7 +13,7 @@ $(document).ready(function() {
   $('input.fredag').bind('keypress', function() {
 
 	var tValue = $(this).attr("value");
-	$("#middle_down p").text(tValue);
+	$("#middle_down p.url").text(tValue);
 	if(tValue.length == 0)
 	{
 	  $("#middle_down").slideDown("slow");

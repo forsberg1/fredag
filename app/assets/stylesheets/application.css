@@ -37,7 +37,7 @@ div#middle_down
 {
 	width: 720px;
 	height: 390px;
-	margin-left: 125px;
+	margin-left: 129px;
 	background:  url(/assets/middle.png) no-repeat;
 
 }
@@ -46,6 +46,7 @@ div#middle_down p
 	margin-left: 30px;
 	margin-top: 20px;
 	color: #ffffff;
+	font-size: 20px;
 }
 h1
 {
@@ -78,13 +79,15 @@ input.fredag[type=text]
 {
 	background: url(/assets/text_input.png) no-repeat;
 	border: none;
-	width: 520px;
-	padding-left: 190px;
+	width: 640px;
+	margin-left: 5px;
+	padding-left: 60px;
 	padding-top: 10px;
 	height: 144px;
 	font-size: 30px;
 	font-family: times, Times New Roman, times-roman, georgia, serif;
 	line-height: 40px;
+	text-align: left;
 	letter-spacing: -1px;color: #444;
 	color: #284847;
 	text-transform: uppercase;
