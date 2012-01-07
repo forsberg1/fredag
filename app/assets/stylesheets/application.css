@@ -57,6 +57,10 @@ h1
     margin-bottom: 5px;
    
 }
+p.url
+{
+	text-transform: uppercase;
+}
 p
 {
   font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
