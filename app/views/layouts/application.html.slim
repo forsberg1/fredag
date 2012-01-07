@@ -5,8 +5,9 @@ html
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
     = csrf_meta_tag
-        
+              
   body
+   
     div id="wrapper" class="container_12"
       div id="middle" class="grid_6"
         form class="fredag" name="add"
@@ -14,7 +15,9 @@ html
       div class="clear"
       div id="middle_down" class="grid_6"
         p 
-          img src="http://placehold.it/200x150"
+          img src="http://placehold.it/212x152"
         p class="url"  
         span class="send_btn"
           img src="/assets/send_btn.png"
+      div class="grid_8"
+        == yield
