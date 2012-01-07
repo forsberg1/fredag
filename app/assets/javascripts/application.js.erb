@@ -10,16 +10,14 @@
 $(document).ready(function() {
   // Handler for .ready() called.
   $("#middle_down").hide();
-  $('input.fredag').bind('keypress', function() {
-
-	var tValue = $(this).attr("value");
+  $('input.fredag').keyup(function(){
+	tValue = $(this).val();
 	$("#middle_down p.url").text(tValue);
-	if(tValue.length == 0)
+	if(tValue.length > 0)
 	{
 	  $("#middle_down").slideDown("slow");
 
 	}
-
 });
 
 $('input.fredag').live('click', function() {
