@@ -18,6 +18,6 @@ html
           img src="http://placehold.it/212x152"
         p class="url"  
         span class="send_btn"
-          img src="/assets/send_btn.png"
+          = image_tag "send_btn.png", :mouseover => "send_btn_hover.png"
       div class="grid_8"
         == yield
